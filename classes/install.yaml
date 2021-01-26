@@ -141,7 +141,7 @@ packageScript: |
     {
         if [[ ${INSTALL_SHARED:-} ]] ; then
             installCopy "$@" /usr/ \
-                /usr/lib/ "/usr/lib/*.so.*" "/usr/lib/lib*-*.so" \
+                /usr/lib/ "/usr/lib/*.so*" \
                 /usr/bin/ "/usr/bin/*.dll" "/usr/bin/*.pdb" \
                 "!*"
             installStripAll .
