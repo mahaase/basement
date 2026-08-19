@@ -74,7 +74,7 @@ depends:
     -
         name: devel::cross-toolchain
         environment:
-            AUTOCONF_TARGET: "${SANDBOX_AUTOCONF_HOST:-$(gen-autoconf,bob)}"
+            AUTOCONF_TARGET: "${SANDBOX_AUTOCONF_BUILD:-$(gen-autoconf,bob)}"
             ARCH: "${SANDBOX_ARCH:-$(host-arch)}"
             GCC_LIBC: glibc
             BASEMENT_OPTIMIZE: "s"
